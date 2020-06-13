@@ -1,7 +1,10 @@
 #!/bin/bash
 set -e
 INCLUDE_VAR_NAMES=${INCLUDE_VAR_NAMES:-0}
-source test_vars.sh
+
+FILE_TO_SOURCE=${1:-test_vars.sh}
+
+source "$FILE_TO_SOURCE"
 
 get_letters(){
     for x in {a..z}; do  echo $x; echo ${x^}; done
@@ -34,6 +37,7 @@ main(){
       | process_letter_commands \
       | process_var_names
 }
+
 
 
 main
