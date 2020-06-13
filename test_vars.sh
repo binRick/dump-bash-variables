@@ -1,0 +1,6 @@
+
+test_var1=100
+wow100=232
+aaa1=2222
+aaa2=3333
+ZZZAAAA=44444
